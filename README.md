@@ -23,6 +23,18 @@ console.log(emoji[2])
 // }
 ```
 
+use i18n
+
+```javascript
+var emoji = require('emoji.json')
+var emoji_i18n = require('emoji.json/i18n/de.json') // Import German with "de.json"
+console.log(emoji_i18n[emoji[2].char]) // Get i18n with char as key
+// {
+//   "name": "grinsendes Gesicht mit lachenden Augen",
+//   "keywords": ["Gesicht", "grinsendes Gesicht mit lachenden Augen", "lol", "lustig"]
+// }
+```
+
 if you care about file size:
 
 ```javascript
